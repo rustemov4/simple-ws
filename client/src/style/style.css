@@ -1,0 +1,45 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect {
+    width: 100%;
+}
+
+.connect_button {
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add {
+    margin-top: 15px;
+}
+
+.new_todo {
+    padding: 5px;
+}
+
+.add_todo {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.get_all_button {
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.todos {
+    margin-top: 15px;
+}
+
+.todo_item {
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
