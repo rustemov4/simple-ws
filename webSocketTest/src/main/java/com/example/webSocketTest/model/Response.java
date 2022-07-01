@@ -6,5 +6,5 @@ import java.util.List;
 @Data
 public class Response {
     private String status;
-    private List<Todo> todos;
+    private Object response;
 }

@@ -24,7 +24,9 @@ function App() {
   }
   const onMessageReceived = (e) => {
     const data = JSON.parse(e.body)
-    setTodos(data.todos)
+    if (Array.isArray(data.response)) {
+      setTodos(data.response)
+    }
     console.log(data.status)
   }
   const sendMessage = (msg) => {

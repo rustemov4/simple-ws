@@ -23,16 +23,16 @@ public class MessageController {
         if (model.getCommand().equals("addLog")) {
             todoService.add(model);
             response.setStatus("OK");
-            response.setTodos(todoService.getAllTodos());
+            response.setResponse(model);
             return response;
 
         } else if (model.getCommand().equals("logs")) {
             response.setStatus("OK");
-            response.setTodos(todoService.getAllTodos());
+            response.setResponse(todoService.getAllTodos());
             return response;
         } else {
             response.setStatus("BAD_REQUEST");
-            response.setTodos(null);
+            response.setResponse(null);
             return response;
         }
     }
